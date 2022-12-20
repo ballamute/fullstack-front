@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    background-color: #f1eacb;
+    margin: 0;
+}
+
+#id {
+    background-color: azure;
+}
+
+.roundable {
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 200%;
+}
+
+.main-header {
+    padding: 10px;
+    background-color: #f8d206;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+button {
+    display: inline-block;
+    background-color: #7b38d8;
+    border-radius: 10px;
+    border: 4px double #cccccc;
+    color: #eeeeee;
+    text-align: center;
+    padding: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: #f7c2f9;
+}
+
+button:hover span {
+    padding-right: 25px;
+}
+
+button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.main-aside {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main-aside section {
+    width: 350px;
+    height: 350px;
+    padding: 10px;
+    background-color: grey;
+    margin-bottom: 10px;
+    background-size: cover;
+}
+
+.main-aside section p {
+    font-size: 20px;
+    color: white;
+}
+
+.main-footer {
+    padding: 10px;
+    background-color: #f8d206;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.post-form {
+    background-color: grey;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-link {
+    text-decoration: none;
+    color: white;
+}
+
+.table-line {
+
+}
+
+.table {
+    border: 1px solid #eee;
+    table-layout: fixed;
+    width: 100%;
+    margin-bottom: 20px;
+    background: #7b38d8;
+}
+
+.table th {
+    font-weight: bold;
+    padding: 5px;
+    background: #aea8d9;
+    border: 1px solid #dddddd;
+}
+
+.table td {
+    padding: 5px 10px;
+    border: 1px solid #eee;
+    text-align: left;
+}
+
+.table tbody tr:nth-child(odd) {
+    background: #f1eacb;
+}
+
+.table tbody tr:nth-child(even) {
+    background: #b4a78b;
+}
